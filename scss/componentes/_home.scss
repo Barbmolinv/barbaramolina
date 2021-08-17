@@ -1,0 +1,61 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0px 0px 0px;
+    margin-bottom: 200px;
+    background-image: url("../../images/bg-home-01.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+
+    h1 {
+        color: $gris-oscuro;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: nth($font-size, 1);
+        text-align: center;
+        animation-duration: 2s;
+        animation-name: opacidad;
+    }
+
+    h5 {
+        color: $gris-oscuro;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: nth($font-size, 4);
+        text-align: center;
+        animation-duration: 2s;
+        animation-name: opacidad;
+    }
+
+    .claim {
+        color: $gris-oscuro;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: nth($font-size, 4);
+        text-align: center;
+        animation-duration: 2s;
+        animation-name: opacidad2;
+    }
+}
+
+/*keyframes*/
+@keyframes opacidad {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacidad2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

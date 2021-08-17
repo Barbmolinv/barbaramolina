@@ -1,0 +1,158 @@
+#Servicios {
+    display: grid;
+    padding: 100px;
+}
+
+.servicios-tituloseccion {
+    @extend %titulo
+}
+
+
+.servicios-todos {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 220px 220px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    align-items: baseline;
+    align-content: center;
+    justify-content: space-between;
+    grid-template-areas:
+        "caja-secciones1 caja-secciones2 caja-secciones3"
+        "caja-secciones4 caja-secciones5 caja-secciones6"
+}
+
+.caja-secciones1 {
+    grid-area: caja-secciones1;
+    background-color: $cajas-secciones;
+    margin: 10px 5px 5px 5px;
+    padding: 15px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.caja-secciones2 {
+    grid-area: caja-secciones2;
+    background-color: $cajas-secciones;
+    margin: 10px 5px 5px 5px;
+    padding: 15px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.caja-secciones3 {
+    grid-area: caja-secciones3;
+    background-color: $cajas-secciones;
+    margin: 10px 5px 5px 5px;
+    padding: 15px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.caja-secciones4 {
+    grid-area: caja-secciones4;
+    background-color: $cajas-secciones;
+    margin: 10px 5px 5px 5px;
+    padding: 15px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.caja-secciones5 {
+    grid-area: caja-secciones5;
+    background-color: $cajas-secciones;
+    margin: 10px 5px 5px 5px;
+    padding: 15px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.caja-secciones6 {
+    grid-area: caja-secciones6;
+    background-color: $cajas-secciones;
+    margin: 10px 5px 5px 5px;
+    padding: 15px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.numero {
+    color: $gris-oscuro;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: nth($font-size, 4);
+    text-align: left;
+}
+
+.titulo-servicio {
+    color: $gris-oscuro;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: nth($font-size, 4);
+    text-align: left;
+}
+
+.texto-base {
+    color: $gris-oscuro;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: nth($font-size, 5);
+    text-align: left;
+}
+
+/* Media query */
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .servicios-todos {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas:
+            "caja-secciones1"
+            "caja-secciones2"
+            "caja-secciones3"
+            "caja-secciones4"
+            "caja-secciones5"
+            "caja-secciones6"
+    }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+    .servicios-todos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        grid-template-areas:
+            "caja-secciones1 caja-secciones2"
+            "caja-secciones3 caja-secciones4"
+            "caja-secciones5 caja-secciones6"
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 961px) {
+    .servicios-todos {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 220px 220px;
+        align-items: baseline;
+        align-content: center;
+        justify-content: space-between;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas:
+            "caja-secciones1 caja-secciones2 caja-secciones3"
+            "caja-secciones4 caja-secciones5 caja-secciones6"
+    }
+}

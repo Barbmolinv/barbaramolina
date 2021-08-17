@@ -1,0 +1,38 @@
+footer {
+    background-color: $gris-claro-box;
+    position: relative;
+    text-align: center;
+    padding: 70px 15px;
+    margin-top: 50px;
+}
+
+
+h3 {
+    color: $gris-oscuro;
+    padding-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 4rem;
+    font-size: nth($font-size, 5);
+    text-align: center;
+    width: 100%;
+}
+
+.copy {
+    display: grid;
+    color: $gris-oscuro;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: nth($font-size, 5);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.redes-lista {
+    @extend %redes-lista;
+}
+
+.redes {
+   @extend %redes;
+}

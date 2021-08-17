@@ -1,0 +1,23 @@
+.navbar{
+    background-color: $blanco;
+    opacity: 80%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;   
+}
+
+.navbar-nav {
+    padding-top: 3px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    color: $gris-oscuro;
+    
+    &:hover {
+        color: darken($color: $gris-oscuro, $amount: 5);
+    }
+}
+

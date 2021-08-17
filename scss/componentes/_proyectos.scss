@@ -1,0 +1,66 @@
+#Proyectos {
+    display: grid;
+    padding: 100px;
+}
+
+.proyectos-tituloseccion {
+    @extend %titulo
+}
+
+.grid-imagenes {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 30% 30% 30%;
+    grid-column-gap: 10px;
+    grid-row-gap: 50px;
+    align-items: baseline;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.images1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-content: left;
+
+    .image1 {
+        width: 350px;
+    }
+}
+
+.images2 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    justify-content: center;
+
+    .image2 {
+        width: 350px;
+    }
+}
+
+.images3 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+    justify-content: right;
+
+    .image3 {
+        width: 350px;
+    }
+}
+
+.tipo-de-proyecto {
+    color: $gris-oscuro;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: nth($font-size, 5);
+    text-align: left;
+}
+
+.cliente {
+    color: $gris-oscuro;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: nth($font-size, 5);
+    text-align: left;
+}

@@ -1,0 +1,28 @@
+@import 'variables';
+
+%redes-lista {
+    padding: 0px;
+}
+
+%redes {
+    width: 35px;
+    padding-left: 10px;
+    display: inline-block;
+    transform: rotateY(0deg);
+    transition: all 1s;
+
+    &:hover {
+        transform: rotateY(360deg);
+    }
+}
+
+%titulo {
+    display: grid;
+    color: $gris-oscuro;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 4rem;
+    font-size: nth($font-size, 3);
+    text-align: left;
+    width: 100%;
+}
