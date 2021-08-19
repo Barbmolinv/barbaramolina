@@ -4,9 +4,11 @@
     justify-content: center;
     padding: 100px 0px 0px 0px;
     margin-bottom: 200px;
-    background-image: url("../../images/bg-home-01.jpg");
+    background-image: url("../images/bg-home-01.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 0px 0px;
+
 
     h1 {
         color: $gris-oscuro;
@@ -26,6 +28,7 @@
         text-align: center;
         animation-duration: 2s;
         animation-name: opacidad;
+        padding-top: 100px;
     }
 
     .claim {
@@ -36,6 +39,7 @@
         text-align: center;
         animation-duration: 2s;
         animation-name: opacidad2;
+        padding-bottom: 200px;
     }
 }
 
