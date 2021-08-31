@@ -360,11 +360,11 @@
   align-items: baseline;
   align-content: center;
   justify-content: space-between;
+  grid-template-areas: "images1 images2" "images3 images4";
 }
 
 .images1 {
-  grid-column-start: 1;
-  grid-row-start: 1;
+  grid-area: images1;
   justify-content: left;
 }
 .images1 .image1 {
@@ -372,8 +372,7 @@
 }
 
 .images2 {
-  grid-column-start: 2;
-  grid-row-start: 1;
+  grid-area: images2;
   justify-content: left;
 }
 .images2 .image2 {
@@ -381,8 +380,7 @@
 }
 
 .images3 {
-  grid-column-start: 1;
-  grid-row-start: 2;
+  grid-area: images3;
   justify-content: left;
 }
 .images3 .image3 {
@@ -390,8 +388,7 @@
 }
 
 .images4 {
-  grid-column-start: 2;
-  grid-row-start: 2;
+  grid-area: images4;
   justify-content: left;
 }
 .images4 .image4 {
@@ -431,11 +428,10 @@
 @media only screen and (max-width: 480px) {
   .grid-imagenes {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    padding: 0px;
     align-items: center;
     justify-items: center;
     grid-template-areas: "images1" "images2" "images3" "images4";
@@ -445,11 +441,10 @@
 @media only screen and (min-width: 481px) and (max-width: 960px) {
   .grid-imagenes {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    padding: 0px;
     align-items: center;
     justify-items: center;
     grid-template-areas: "images1" "images2" "images3" "images4";
@@ -457,15 +452,16 @@
 }
 /* Desktop */
 @media only screen and (min-width: 961px) {
-  .grid-imagenes {
+  .servicios-todos {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 220px 220px;
     align-items: baseline;
     align-content: center;
     justify-content: space-between;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    grid-template-areas: "images1 images2" "images3 images4";
   }
 }
 footer {
