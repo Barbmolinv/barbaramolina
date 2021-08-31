@@ -116,11 +116,11 @@
   grid-column-gap: 10px;
   align-items: center;
   justify-items: center;
+  grid-template-areas: "foto-izq texto-der";
 }
 
 .texto-der {
-  grid-column-start: 2;
-  grid-row-start: 1;
+  grid-area: texto-der;
   color: #212121;
   padding: 20px 50px 20px 0px;
 }
@@ -141,11 +141,10 @@
   text-align: left;
 }
 .foto-izq {
+  grid-area: foto-izq;
   width: 350px;
   padding: 20px;
   border-radius: 5px;
-  grid-column-start: 1;
-  grid-row-start: 1;
 }
 
 /* Media query */
@@ -155,50 +154,42 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 50% 50%;
+    grid-row-gap: 12px;
     width: 100%;
     padding: 5px;
-  }
-
-  .texto-der {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    color: #212121;
-  }
-
-  .foto-izq {
-    width: auto;
-    padding: 20px;
-    border-radius: 5px;
-    grid-column-start: 1;
-    grid-row-start: 1;
+    grid-template-areas: "foto-izq" "texto-der";
   }
 }
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 960px) {
   .about-me {
+    background-color: #dadada;
+    padding: 50px 0;
+    border-radius: 8px;
+    margin: 100px;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
-  }
-
-  .texto-der {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    color: #212121;
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "foto-izq texto-der";
   }
 }
 /* Desktop */
 @media only screen and (min-width: 961px) {
-  .cuadricula-imagenes {
+  .about-me {
+    background-color: #dadada;
+    padding: 50px 0;
+    border-radius: 8px;
+    margin: 100px;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
-  }
-
-  .texto-der {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    color: #212121;
+    grid-column-gap: 10px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: "foto-izq texto-der";
   }
 }
 #Servicios {
@@ -452,15 +443,16 @@
 }
 /* Desktop */
 @media only screen and (min-width: 961px) {
-  .servicios-todos {
+  .grid-imagenes {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 220px 220px;
+    padding-top: 50px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
     align-items: baseline;
     align-content: center;
     justify-content: space-between;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
     grid-template-areas: "images1 images2" "images3 images4";
   }
 }
