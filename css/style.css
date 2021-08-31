@@ -204,6 +204,7 @@
 #Servicios {
   display: grid;
   padding: 100px;
+  background-color: #e8e8e8;
 }
 
 .servicios-todos {
@@ -220,56 +221,62 @@
 
 .caja-secciones1 {
   grid-area: caja-secciones1;
-  background-color: #e8e8e8;
+  background-color: #dadada;
   margin: 10px 5px 5px 5px;
   padding: 15px;
   height: 100%;
   border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .caja-secciones2 {
   grid-area: caja-secciones2;
-  background-color: #e8e8e8;
+  background-color: #dadada;
   margin: 10px 5px 5px 5px;
   padding: 15px;
   height: 100%;
   border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .caja-secciones3 {
   grid-area: caja-secciones3;
-  background-color: #e8e8e8;
+  background-color: #dadada;
   margin: 10px 5px 5px 5px;
   padding: 15px;
   height: 100%;
   border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .caja-secciones4 {
   grid-area: caja-secciones4;
-  background-color: #e8e8e8;
+  background-color: #dadada;
   margin: 10px 5px 5px 5px;
   padding: 15px;
   height: 100%;
   border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .caja-secciones5 {
   grid-area: caja-secciones5;
-  background-color: #e8e8e8;
+  background-color: #dadada;
   margin: 10px 5px 5px 5px;
   padding: 15px;
   height: 100%;
   border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .caja-secciones6 {
   grid-area: caja-secciones6;
-  background-color: #e8e8e8;
+  background-color: #dadada;
   margin: 10px 5px 5px 5px;
   padding: 15px;
   height: 100%;
   border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
 .numero {
