@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.redes-lista, .texto-der .redes-lista {
+.redes-lista {
   padding: 0px;
 }
 
-.redes, .texto-der .redes {
+.redes {
   width: 35px;
   padding-left: 10px;
   display: inline-block;
@@ -48,8 +48,6 @@
 }
 
 #home {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   padding: 100px 0px 0px 0px;
   margin-bottom: 200px;
@@ -105,44 +103,47 @@
     opacity: 1;
   }
 }
+@media only screen and (max-width: 480px) {
+  #home h1 {
+    font-size: 4rem;
+  }
+}
 .about-me {
   background-color: #dadada;
-  padding: 50px 0;
   border-radius: 8px;
-  margin: 100px;
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: auto;
+  margin-bottom: 100px;
   grid-column-gap: 10px;
   align-items: center;
   justify-items: center;
-  grid-template-areas: "foto-izq texto-der";
 }
 
-.texto-der {
-  grid-area: texto-der;
-  color: #212121;
-  padding: 20px 50px 20px 0px;
-}
-.texto-der .presenta-corta {
+.presenta-corta {
   color: #212121;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 4rem;
   font-size: 3rem;
   text-align: left;
+  padding: 20px 20px 10px 20px;
+  margin: 0px;
 }
-.texto-der .presenta-detallada {
+
+.presenta-detallada {
   color: #212121;
   font-family: "Montserrat", sans-serif;
   line-height: 2rem;
   font-weight: 400;
   font-size: 1rem;
   text-align: left;
+  padding: 20px 0px 0px 20px;
 }
+
+.redes-lista {
+  padding-left: 10px;
+  margin: 0px;
+}
+
 .foto-izq {
-  grid-area: foto-izq;
-  width: 350px;
   padding: 20px;
   border-radius: 5px;
 }
@@ -150,55 +151,25 @@
 /* Media query */
 /* Mobile */
 @media only screen and (max-width: 480px) {
-  .about-me {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50% 50%;
-    grid-row-gap: 12px;
-    width: 100%;
-    padding: 5px;
-    grid-template-areas: "foto-izq" "texto-der";
+  .presenta-corta {
+    font-size: 3rem;
   }
-}
-/* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 960px) {
-  .about-me {
-    background-color: #dadada;
-    padding: 50px 0;
-    border-radius: 8px;
-    margin: 100px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: "foto-izq texto-der";
-  }
-}
-/* Desktop */
-@media only screen and (min-width: 961px) {
-  .about-me {
-    background-color: #dadada;
-    padding: 50px 0;
-    border-radius: 8px;
-    margin: 100px;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: auto;
-    grid-column-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: "foto-izq texto-der";
+
+  .redes-lista {
+    padding-bottom: 30px;
   }
 }
 #Servicios {
   display: grid;
-  padding: 100px;
   background-color: #e8e8e8;
 }
 
+.servicios-tituloseccion {
+  padding: 100px 0px 0px 100px;
+}
+
 .servicios-todos {
+  padding: 50px 100px 100px 100px;
   display: grid;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: 220px 220px;
@@ -304,9 +275,14 @@
     grid-template-rows: auto auto auto auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    padding: 50px 20px 50px 20px;
     align-items: center;
     justify-items: center;
     grid-template-areas: "caja-secciones1" "caja-secciones2" "caja-secciones3" "caja-secciones4" "caja-secciones5" "caja-secciones6";
+  }
+
+  .servicios-tituloseccion {
+    padding: 50px 0px 0px 20px;
   }
 }
 /* Tablet */
@@ -317,6 +293,7 @@
     grid-template-rows: auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    padding: 50px 20px 50px 20px;
     align-items: center;
     justify-items: center;
     grid-template-areas: "caja-secciones1 caja-secciones2" "caja-secciones3 caja-secciones4" "caja-secciones5 caja-secciones6";
@@ -338,51 +315,13 @@
 }
 #Proyectos {
   display: grid;
-  padding: 100px;
 }
 
-.grid-imagenes {
-  display: grid;
-  padding-top: 50px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  align-items: baseline;
-  align-content: center;
-  justify-content: space-between;
-  grid-template-areas: "images1 images2" "images3 images4";
+.proyectos-tituloseccion {
+  padding: 100px 0px 0px 100px;
 }
 
-.images1 {
-  grid-area: images1;
-  justify-content: left;
-}
-.images1 .image1 {
-  width: 500px;
-}
-
-.images2 {
-  grid-area: images2;
-  justify-content: left;
-}
-.images2 .image2 {
-  width: 500px;
-}
-
-.images3 {
-  grid-area: images3;
-  justify-content: left;
-}
-.images3 .image3 {
-  width: 500px;
-}
-
-.images4 {
-  grid-area: images4;
-  justify-content: left;
-}
-.images4 .image4 {
+.image {
   width: 500px;
 }
 
@@ -417,43 +356,12 @@
 /* Media query */
 /* Mobile */
 @media only screen and (max-width: 480px) {
-  .grid-imagenes {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: "images1" "images2" "images3" "images4";
+  .image {
+    width: 300px;
   }
-}
-/* Tablet */
-@media only screen and (min-width: 481px) and (max-width: 960px) {
-  .grid-imagenes {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: "images1" "images2" "images3" "images4";
-  }
-}
-/* Desktop */
-@media only screen and (min-width: 961px) {
-  .grid-imagenes {
-    display: grid;
-    padding-top: 50px;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    align-items: baseline;
-    align-content: center;
-    justify-content: space-between;
-    grid-template-areas: "images1 images2" "images3 images4";
+
+  .servicios-tituloseccion {
+    padding: 50px 0px 0px 20px;
   }
 }
 footer {
@@ -488,6 +396,12 @@ h3 {
 
 #Contacto {
   padding: 100px 100px 100px 100px;
+}
+
+@media only screen and (max-width: 480px) {
+  .servicios-tituloseccion {
+    padding: 50px 0px 0px 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
