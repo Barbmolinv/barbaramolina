@@ -360,7 +360,7 @@
     width: 300px;
   }
 
-  .servicios-tituloseccion {
+  .proyectos-tituloseccion {
     padding: 50px 0px 0px 20px;
   }
 }
@@ -399,7 +399,7 @@ h3 {
 }
 
 @media only screen and (max-width: 480px) {
-  .servicios-tituloseccion {
+  .contacto-tituloseccion {
     padding: 50px 0px 0px 20px;
   }
 }
